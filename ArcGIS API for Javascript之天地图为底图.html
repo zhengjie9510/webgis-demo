@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="通过ArcGIS API for JavaScript 4.15调用天地图的影像"/>
+        <title>Set Tianditu as basemap</title>
+        <style>
+            html, body, #viewDiv {
+              padding: 0;
+              margin: 0;
+              height: 100%;
+              width: 100%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
+        <script src="https://js.arcgis.com/4.15/"></script>
+        <script>
+            require([
+                "esri/Map",
+                "esri/views/MapView",
+                "esri/layers/WebTileLayer",
+            ],function(Map, MapView,WebTileLayer){
+
+                var tileLayer = new WebTileLayer({
+                    urlTemplate:"http://{subDomain}.tianditu.gov.cn/img_w/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=img&STYLE=default&TILEMATRIXSET=w&FORMAT=tiles&TILEMATRIX={level}&TILEROW={row}&TILECOL={col}&tk=key",
+                    subDomains: ["t0", "t1", "t2", "t3","t4", "t5", "t6", "t7"],
+                });
+
+                var tileLayer_poi = new WebTileLayer({
+                    urlTemplate:"http://{subDomain}.tianditu.gov.cn/DataServer?T=cia_w&x={col}&y={row}&l={level}&tk=key",
+                    subDomains: ["t0", "t1", "t2", "t3","t4", "t5", "t6", "t7"],
+                });
+
+                var map=new Map({
+                    basemap: {baseLayers: [tileLayer,tileLayer_poi]}
+                });
+                
+                var view =new MapView({
+                    container: "viewDiv",
+                    map:map,
+                    center: [115.80500, 38.02700],
+                    zoom: 4
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="viewDiv"></div>
+    </body>
+</html>
