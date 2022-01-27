@@ -1,5 +1,5 @@
 /* This file is automatically rebuilt by the Cesium build process. */
-define(['./when-8166c7dd', './Matrix2-92b7fb9d', './RuntimeError-4fdc4459', './EllipsoidOutlineGeometry-7cf1382d', './ComponentDatatype-9ed50558', './WebGLConstants-0664004c', './GeometryOffsetAttribute-e8e698d7', './Transforms-62a339c3', './combine-a5c4cc47', './GeometryAttribute-6f4c3b93', './GeometryAttributes-50becc99', './IndexDatatype-797210ca'], (function (when, Matrix2, RuntimeError, EllipsoidOutlineGeometry, ComponentDatatype, WebGLConstants, GeometryOffsetAttribute, Transforms, combine, GeometryAttribute, GeometryAttributes, IndexDatatype) { 'use strict';
+define(['./when-8166c7dd', './Matrix2-0e286ffc', './RuntimeError-4fdc4459', './EllipsoidOutlineGeometry-cd48a50b', './ComponentDatatype-9ed50558', './WebGLConstants-0664004c', './GeometryOffsetAttribute-e8e698d7', './Transforms-de823166', './combine-a5c4cc47', './GeometryAttribute-83cf1273', './GeometryAttributes-50becc99', './IndexDatatype-797210ca'], (function (when, Matrix2, RuntimeError, EllipsoidOutlineGeometry, ComponentDatatype, WebGLConstants, GeometryOffsetAttribute, Transforms, combine, GeometryAttribute, GeometryAttributes, IndexDatatype) { 'use strict';
 
   /**
    * A description of the outline of a sphere.

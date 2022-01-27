@@ -1,5 +1,5 @@
 /* This file is automatically rebuilt by the Cesium build process. */
-define(['./when-8166c7dd', './Transforms-62a339c3', './Matrix2-92b7fb9d', './RuntimeError-4fdc4459', './ComponentDatatype-9ed50558', './FrustumGeometry-5e81e036', './GeometryAttribute-6f4c3b93', './GeometryAttributes-50becc99', './combine-a5c4cc47', './WebGLConstants-0664004c', './Plane-049255eb', './VertexFormat-c0801687'], (function (when, Transforms, Matrix2, RuntimeError, ComponentDatatype, FrustumGeometry, GeometryAttribute, GeometryAttributes, combine, WebGLConstants, Plane, VertexFormat) { 'use strict';
+define(['./when-8166c7dd', './Transforms-de823166', './Matrix2-0e286ffc', './RuntimeError-4fdc4459', './ComponentDatatype-9ed50558', './FrustumGeometry-97d9e898', './GeometryAttribute-83cf1273', './GeometryAttributes-50becc99', './combine-a5c4cc47', './WebGLConstants-0664004c', './Plane-456cf3fd', './VertexFormat-c0801687'], (function (when, Transforms, Matrix2, RuntimeError, ComponentDatatype, FrustumGeometry, GeometryAttribute, GeometryAttributes, combine, WebGLConstants, Plane, VertexFormat) { 'use strict';
 
   var PERSPECTIVE = 0;
   var ORTHOGRAPHIC = 1;

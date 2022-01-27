@@ -1,5 +1,5 @@
 /* This file is automatically rebuilt by the Cesium build process. */
-define(['./GeometryOffsetAttribute-e8e698d7', './Transforms-62a339c3', './Matrix2-92b7fb9d', './RuntimeError-4fdc4459', './ComponentDatatype-9ed50558', './when-8166c7dd', './GeometryAttribute-6f4c3b93', './GeometryAttributes-50becc99', './combine-a5c4cc47', './WebGLConstants-0664004c'], (function (GeometryOffsetAttribute, Transforms, Matrix2, RuntimeError, ComponentDatatype, when, GeometryAttribute, GeometryAttributes, combine, WebGLConstants) { 'use strict';
+define(['./GeometryOffsetAttribute-e8e698d7', './Transforms-de823166', './Matrix2-0e286ffc', './RuntimeError-4fdc4459', './ComponentDatatype-9ed50558', './when-8166c7dd', './GeometryAttribute-83cf1273', './GeometryAttributes-50becc99', './combine-a5c4cc47', './WebGLConstants-0664004c'], (function (GeometryOffsetAttribute, Transforms, Matrix2, RuntimeError, ComponentDatatype, when, GeometryAttribute, GeometryAttributes, combine, WebGLConstants) { 'use strict';
 
   var diffScratch = new Matrix2.Cartesian3();
 

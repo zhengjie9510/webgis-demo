@@ -1,5 +1,5 @@
 /* This file is automatically rebuilt by the Cesium build process. */
-define(['./AttributeCompression-212262a3', './Matrix2-92b7fb9d', './combine-a5c4cc47', './IndexDatatype-797210ca', './ComponentDatatype-9ed50558', './createTaskProcessorWorker', './RuntimeError-4fdc4459', './when-8166c7dd', './WebGLConstants-0664004c'], (function (AttributeCompression, Matrix2, combine, IndexDatatype, ComponentDatatype, createTaskProcessorWorker, RuntimeError, when, WebGLConstants) { 'use strict';
+define(['./AttributeCompression-a3d02c34', './Matrix2-0e286ffc', './combine-a5c4cc47', './IndexDatatype-797210ca', './ComponentDatatype-9ed50558', './createTaskProcessorWorker', './RuntimeError-4fdc4459', './when-8166c7dd', './WebGLConstants-0664004c'], (function (AttributeCompression, Matrix2, combine, IndexDatatype, ComponentDatatype, createTaskProcessorWorker, RuntimeError, when, WebGLConstants) { 'use strict';
 
   var MAX_SHORT = 32767;
   var MITER_BREAK = Math.cos(ComponentDatatype.CesiumMath.toRadians(150.0));
