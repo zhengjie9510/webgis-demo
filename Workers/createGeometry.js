@@ -1,7 +1,7 @@
 /**
  * @license
  * Cesium - https://github.com/CesiumGS/cesium
- * Version 1.98.1
+ * Version 1.99
  *
  * Copyright 2011-2022 Cesium Contributors
  *
@@ -22,4 +22,4 @@
  * Portions licensed separately.
  * See https://github.com/CesiumGS/cesium/blob/main/LICENSE.md for full licensing details.
  */
-define(["./defaultValue-65031fc5","./PrimitivePipeline-f81d7dea","./createTaskProcessorWorker","./Transforms-a48d25e5","./Matrix2-c339372d","./ComponentDatatype-1b227f17","./WebGLConstants-f5c279b9","./RuntimeError-23f4777c","./combine-96aed74b","./GeometryAttribute-5db26912","./GeometryAttributes-f9b563d6","./GeometryPipeline-7e799ed5","./AttributeCompression-9d180a12","./EncodedCartesian3-4e907eba","./IndexDatatype-53de8b23","./IntersectionTests-87344d12","./Plane-3d182a08","./WebMercatorProjection-b33ee193"],(function(e,t,r,n,o,i,s,a,c,d,f,u,b,m,l,p,y,P){"use strict";const k={};function C(t){let r=k[t];return e.defined(r)||("object"==typeof exports?k[r]=r=require(`Workers/${t}`):require([`Workers/${t}`],(function(e){r=e,k[r]=e}))),r}return r((function(r,n){const o=r.subTasks,i=o.length,s=new Array(i);for(let t=0;t<i;t++){const r=o[t],n=r.geometry,i=r.moduleName;if(e.defined(i)){const e=C(i);s[t]=e(n,r.offset)}else s[t]=n}return Promise.all(s).then((function(e){return t.PrimitivePipeline.packCreateGeometryResults(e,n)}))}))}));
+define(["./defaultValue-135942ca","./PrimitivePipeline-ed52a9c2","./createTaskProcessorWorker","./Transforms-3ea76111","./Matrix3-edb29a7e","./Math-a304e2d6","./Matrix2-7a2bab7e","./RuntimeError-f0dada00","./combine-462d91dd","./ComponentDatatype-e86a9f87","./WebGLConstants-fcb70ee3","./GeometryAttribute-dacddb3f","./GeometryAttributes-899f8bd0","./GeometryPipeline-7cd8f832","./AttributeCompression-5b18be52","./EncodedCartesian3-bf4e5ec3","./IndexDatatype-3a8ea78f","./IntersectionTests-f3382f21","./Plane-5bea24eb","./WebMercatorProjection-76d90916"],(function(e,t,r,n,o,a,i,s,c,f,d,u,b,m,l,p,y,P,k,C){"use strict";const G={};function W(t){let r=G[t];return e.defined(r)||("object"==typeof exports?G[r]=r=require(`Workers/${t}`):require([`Workers/${t}`],(function(e){r=e,G[r]=e}))),r}return r((function(r,n){const o=r.subTasks,a=o.length,i=new Array(a);for(let t=0;t<a;t++){const r=o[t],n=r.geometry,a=r.moduleName;if(e.defined(a)){const e=W(a);i[t]=e(n,r.offset)}else i[t]=n}return Promise.all(i).then((function(e){return t.PrimitivePipeline.packCreateGeometryResults(e,n)}))}))}));

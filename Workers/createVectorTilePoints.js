@@ -1,7 +1,7 @@
 /**
  * @license
  * Cesium - https://github.com/CesiumGS/cesium
- * Version 1.98.1
+ * Version 1.99
  *
  * Copyright 2011-2022 Cesium Contributors
  *
@@ -22,4 +22,4 @@
  * Portions licensed separately.
  * See https://github.com/CesiumGS/cesium/blob/main/LICENSE.md for full licensing details.
  */
-define(["./AttributeCompression-9d180a12","./Matrix2-c339372d","./ComponentDatatype-1b227f17","./createTaskProcessorWorker","./defaultValue-65031fc5","./RuntimeError-23f4777c","./WebGLConstants-f5c279b9"],(function(e,t,a,r,n,o,i){"use strict";const s=32767,c=new t.Cartographic,u=new t.Cartesian3,p=new t.Rectangle,l=new t.Ellipsoid,f={min:void 0,max:void 0};return r((function(r,n){const o=new Uint16Array(r.positions);!function(e){e=new Float64Array(e);let a=0;f.min=e[a++],f.max=e[a++],t.Rectangle.unpack(e,a,p),a+=t.Rectangle.packedLength,t.Ellipsoid.unpack(e,a,l)}(r.packedBuffer);const i=p,m=l,d=f.min,h=f.max,C=o.length/3,g=o.subarray(0,C),b=o.subarray(C,2*C),w=o.subarray(2*C,3*C);e.AttributeCompression.zigZagDeltaDecode(g,b,w);const k=new Float64Array(o.length);for(let e=0;e<C;++e){const r=g[e],n=b[e],o=w[e],p=a.CesiumMath.lerp(i.west,i.east,r/s),l=a.CesiumMath.lerp(i.south,i.north,n/s),f=a.CesiumMath.lerp(d,h,o/s),C=t.Cartographic.fromRadians(p,l,f,c),y=m.cartographicToCartesian(C,u);t.Cartesian3.pack(y,k,3*e)}return n.push(k.buffer),{positions:k.buffer}}))}));
+define(["./AttributeCompression-5b18be52","./Matrix3-edb29a7e","./Math-a304e2d6","./Matrix2-7a2bab7e","./createTaskProcessorWorker","./ComponentDatatype-e86a9f87","./defaultValue-135942ca","./WebGLConstants-fcb70ee3","./RuntimeError-f0dada00"],(function(e,a,t,r,n,o,i,s,c){"use strict";const u=32767,p=new a.Cartographic,l=new a.Cartesian3,f=new r.Rectangle,b=new a.Ellipsoid,d={min:void 0,max:void 0};return n((function(n,o){const i=new Uint16Array(n.positions);!function(e){e=new Float64Array(e);let t=0;d.min=e[t++],d.max=e[t++],r.Rectangle.unpack(e,t,f),t+=r.Rectangle.packedLength,a.Ellipsoid.unpack(e,t,b)}(n.packedBuffer);const s=f,c=b,m=d.min,h=d.max,C=i.length/3,g=i.subarray(0,C),w=i.subarray(C,2*C),k=i.subarray(2*C,3*C);e.AttributeCompression.zigZagDeltaDecode(g,w,k);const y=new Float64Array(i.length);for(let e=0;e<C;++e){const r=g[e],n=w[e],o=k[e],i=t.CesiumMath.lerp(s.west,s.east,r/u),f=t.CesiumMath.lerp(s.south,s.north,n/u),b=t.CesiumMath.lerp(m,h,o/u),d=a.Cartographic.fromRadians(i,f,b,p),C=c.cartographicToCartesian(d,l);a.Cartesian3.pack(C,y,3*e)}return o.push(y.buffer),{positions:y.buffer}}))}));
