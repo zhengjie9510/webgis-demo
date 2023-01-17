@@ -1,1 +1,0 @@
-import knockout from"../ThirdParty/knockout.js";function subscribeAndEvaluate(t,e,r,u,o){return r.call(u,t[e]),knockout.getObservable(t,e).subscribe(r,u,o)}export default subscribeAndEvaluate;

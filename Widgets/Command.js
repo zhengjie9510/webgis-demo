@@ -1,1 +1,0 @@
-import DeveloperError from"../Core/DeveloperError.js";function Command(){this.canExecute=void 0,this.beforeExecute=void 0,this.afterExecute=void 0,DeveloperError.throwInstantiationError()}export default Command;
