@@ -1,13 +1,6 @@
 const files = [
-    { file: "three", name: 'reflector_example', title: '倒影' },
-    { file: "three", name: 'high_speed_light_trails', title: '移动轨迹' },
-    { file: "three", name: 'custom_surface', title: '矩阵转曲面' },
-    { file: "three", name: 'rain_cloud', title: '降雨效果' },
-    { file: "three", name: 'fireworks_effect', title: '烟花效果' },
-    { file: "three", name: 'normal_mapping', title: '法线贴图' },
-    { file: "three", name: 'physical_material', title: '基于物理的渲染' },
-    { file: "three", name: 'realistic_material', title: '基于物理的纹理' },
-    { file: "three", name: 'real_earth', title: '3D地球' },
+    { file: "public", name: 'trail_line', title: '道路穿梭线' },
+    { file: "public", name: 'dynamic_water', title: '动态水面' },
     { file: "public", name: 'snow_effect', title: '雪天效果' },
     { file: "public", name: 'select_hightlight_instance', title: 'GeometryInstance点击改变颜色' },
     { file: "public", name: 'select_hightlight', title: '点击高亮' },
@@ -33,6 +26,15 @@ const files = [
     { file: "public", name: 'cesium_threejs', title: 'Cesium集成Threejs' },
     { file: "public", name: 'map_3d', title: '3d地图' },
     { file: "public", name: 'optimizing_lots_of_objects', title: 'Threejs加载大量几何体' },
+    { file: "three", name: 'reflector_example', title: '倒影' },
+    { file: "three", name: 'high_speed_light_trails', title: '移动轨迹' },
+    { file: "three", name: 'custom_surface', title: '矩阵转曲面' },
+    { file: "three", name: 'rain_cloud', title: '降雨效果' },
+    { file: "three", name: 'fireworks_effect', title: '烟花效果' },
+    { file: "three", name: 'normal_mapping', title: '法线贴图' },
+    { file: "three", name: 'physical_material', title: '基于物理的渲染' },
+    { file: "three", name: 'realistic_material', title: '基于物理的纹理' },
+    { file: "three", name: 'real_earth', title: '3D地球' }
 ]
 
 function createRouter(files) {
