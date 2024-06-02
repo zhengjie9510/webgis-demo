@@ -1,6 +1,8 @@
 const files = [
     { file: "public", name: 'trail_line', title: '道路穿梭线' },
     { file: "public", name: 'dynamic_water', title: '动态水面' },
+    { file: "public", name: 'migration_line', title: '迁徙线效果' },
+    { file: "public", name: 'dynamic_polyline_volume', title: '流动管线' },
     { file: "public", name: 'snow_effect', title: '雪天效果' },
     { file: "public", name: 'select_hightlight_instance', title: 'GeometryInstance点击改变颜色' },
     { file: "public", name: 'select_hightlight', title: '点击高亮' },
