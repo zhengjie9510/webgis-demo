@@ -1,6 +1,11 @@
 const files = [
+    { file: "public", name: 'dynamic_wall', title: '动态墙' },
     { file: "public", name: 'trail_line', title: '道路穿梭线' },
     { file: "public", name: 'dynamic_water', title: '动态水面' },
+    { file: "public", name: 'glow_border', title: '发光边界' },
+    { file: "public", name: 'ellipsoid_electric', title: '电弧圆' },
+    { file: "public", name: 'radar_scan', title: '雷达扫描' },
+    { file: "public", name: 'radar_effect', title: '雷达效果' },
     { file: "public", name: 'migration_line', title: '迁徙线效果' },
     { file: "public", name: 'dynamic_polyline_volume', title: '流动管线' },
     { file: "public", name: 'snow_effect', title: '雪天效果' },
