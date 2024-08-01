@@ -1,4 +1,5 @@
 const files = [
+    { file: "public", name: 'border_mask', title: '边界掩膜' },
     { file: "public", name: 'dynamic_wall', title: '动态墙' },
     { file: "public", name: 'trail_line', title: '道路穿梭线' },
     { file: "public", name: 'dynamic_water', title: '动态水面' },
