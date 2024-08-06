@@ -1,4 +1,5 @@
 const files = [
+    { file: "public", name: 'move_3dTiles', title: '3DTiles位置调整' },
     { file: "public", name: 'border_mask', title: '边界掩膜' },
     { file: "public", name: 'dynamic_wall', title: '动态墙' },
     { file: "public", name: 'trail_line', title: '道路穿梭线' },
