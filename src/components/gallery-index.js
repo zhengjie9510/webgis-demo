@@ -1,4 +1,5 @@
 const files = [
+    { file: "public", name: 'skybox_change', title: '天空盒'},
     { file: "public", name: 'custom_primitive', title: '自定义Primitive' },
     { file: "public", name: 'move_3dTiles', title: '3DTiles位置调整' },
     { file: "public", name: 'border_mask', title: '边界掩膜' },
