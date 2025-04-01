@@ -5,6 +5,7 @@ const files = [
     {file: "public", name: 'move_3dTiles', title: '3DTiles位置调整'},
     {file: "public", name: 'border_mask', title: '边界掩膜'},
     {file: "public", name: 'dynamic_wall', title: '动态墙'},
+    {file: "public", name: 'trail_line_2', title: '道路穿梭线-带底色'},
     {file: "public", name: 'trail_line', title: '道路穿梭线'},
     {file: "public", name: 'dynamic_water', title: '动态水面'},
     {file: "public", name: 'glow_border', title: '发光边界'},
