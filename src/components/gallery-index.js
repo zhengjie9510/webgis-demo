@@ -1,4 +1,9 @@
 const files = [
+    {file: "public", name: '3dTiles_shader', title: '建筑纹理与光环(3dTiles)'},
+    {file: "public", name: 'dynamic_building', title: '建筑纹理与光环(GeoJSON)'},
+    {file: "public", name: 'corrugated_circle', title: '扩散圆'},
+    {file: "public", name: 'offscreen_rendering', title: '渲染Primitive到FBO'},
+    {file: "public", name: 'custom_geometry_1', title: '自定义曲面'},
     {file: "public", name: 'wind_field', title: '3D风场（CPU）'},
     {file: "public", name: 'skybox_change', title: '天空盒'},
     {file: "public", name: 'custom_primitive', title: '自定义Primitive'},

@@ -22,19 +22,14 @@ import {
   Primitive,
   Material,
   Color,
-  createWorldTerrainAsync
 } from 'cesium'
 export default {
   mounted() {
     this.init()
   },
   methods: {
-    async init() {
-      const viewer = new Viewer('cesiumContainer', {
-        terrainProvider: await createWorldTerrainAsync(),
-        animation: false,
-        timeline: false,
-      });
+    init() {
+      var viewer = new Viewer('cesiumContainer', { infoBox: false })
       if (FeatureDetection.supportsImageRenderingPixelated()) {
         //判断是否支持图像渲染像素化处理
         viewer.resolutionScale = window.devicePixelRatio
