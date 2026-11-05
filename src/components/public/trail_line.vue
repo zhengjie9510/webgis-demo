@@ -47,7 +47,6 @@ Object.defineProperties(SpriteLineMaterialProperty.prototype, {
   speed: Cesium.createPropertyDescriptor('speed'),
   color: Cesium.createPropertyDescriptor('color')
 })
-Cesium.SpriteLineMaterialProperty = SpriteLineMaterialProperty
 Cesium.Material.SpriteLineMaterialType = 'SpriteLineMaterialType';
 Cesium.Material.SpriteLineMaterialSource = `
   uniform vec4 color;  
@@ -103,7 +102,7 @@ export default {
         var entities = dataSource.entities.values;
         for (let entity of entities) {
           entity.polyline.width = 1
-          entity.polyline.material = new Cesium.SpriteLineMaterialProperty({
+          entity.polyline.material = new SpriteLineMaterialProperty({
             color: Cesium.Color.AQUA,
             speed: 10.0
           })

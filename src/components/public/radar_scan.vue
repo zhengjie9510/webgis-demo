@@ -10,14 +10,14 @@ export default {
     this.init()
   },
   methods: {
-    init() {
-      var viewer = new Cesium.Viewer('cesiumContainer', { terrainProvider: Cesium.createWorldTerrain() })
+    async init() {
+      var viewer = new Cesium.Viewer('cesiumContainer', { terrainProvider: await Cesium.createWorldTerrainAsync() })
       if (Cesium.FeatureDetection.supportsImageRenderingPixelated()) {
         //判断是否支持图像渲染像素化处理
         viewer.resolutionScale = window.devicePixelRatio
       }
       viewer.scene.postProcessStages.fxaa.enabled = true
-      viewer.scene.primitives.add(Cesium.createOsmBuildings());
+      viewer.scene.primitives.add(await Cesium.createOsmBuildingsAsync());
       // Create the scene.
       var scene = viewer.scene
       // Create the circle geometry.

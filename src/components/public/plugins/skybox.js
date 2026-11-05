@@ -1,7 +1,8 @@
 import * as Cesium from 'cesium'
 const BoxGeometry = Cesium.BoxGeometry;
 const Cartesian3 = Cesium.Cartesian3;
-const defaultValue = Cesium.defaultValue;
+// Cesium 1.147 移除了 defaultValue，这里保留原实现
+const defaultValue = (a, b) => (a !== undefined && a !== null ? a : b);
 const defined = Cesium.defined;
 const destroyObject = Cesium.destroyObject;
 const DeveloperError = Cesium.DeveloperError;

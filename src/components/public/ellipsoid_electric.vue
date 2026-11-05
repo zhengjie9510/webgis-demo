@@ -47,7 +47,6 @@ Object.defineProperties(EllipsoidElectricMaterialProperty.prototype, {
   color: Cesium.createPropertyDescriptor('color'),
   speed: Cesium.createPropertyDescriptor('speed')
 })
-Cesium.EllipsoidElectricMaterialProperty = EllipsoidElectricMaterialProperty
 Cesium.Material.EllipsoidElectricMaterialType = 'EllipsoidElectricMaterialType';
 Cesium.Material.EllipsoidElectricMaterialSource =
   `
@@ -161,7 +160,7 @@ export default {
         name: '电弧球体',
         ellipsoid: {
           radii: new Cesium.Cartesian3(100.0, 100.0, 100.0),
-          material: new Cesium.EllipsoidElectricMaterialProperty({
+          material: new EllipsoidElectricMaterialProperty({
             color: new Cesium.Color(1.0, 0.5, 0.0, 1.0),
             speed: 10.0
           })

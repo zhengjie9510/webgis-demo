@@ -1,11 +1,19 @@
 import {
   ArcType, BoundingRectangle, BoundingSphere, Cartesian2, Cartesian3, Cartographic,
-  Check, ComponentDatatype, defaultValue, defined, DeveloperError, Ellipsoid,
+  Check, ComponentDatatype, defined, DeveloperError, Ellipsoid,
   EllipsoidGeodesic, EllipsoidTangentPlane, Geometry, GeometryAttribute, GeometryInstance,
   GeometryOffsetAttribute, GeometryPipeline, IndexDatatype, Math as CesiumMath, Matrix3, PolygonGeometryLibrary,
   PolygonPipeline, Quaternion, Rectangle, VertexFormat, WindingOrder,
 } from 'cesium'
 
+// Cesium 1.147 移除了 defaultValue，这里保留原实现
+function defaultValue(a, b) {
+  if (a !== undefined && a !== null) {
+    return a;
+  }
+  return b;
+}
+defaultValue.EMPTY_OBJECT = Object.freeze({});
 
 const scratchCarto1 = new Cartographic();
 const scratchCarto2 = new Cartographic();
