@@ -13,7 +13,8 @@
                             padding: '5px',
                         }"
                     >
-                        <el-image :src="demo.img" lazy class="image"> </el-image>
+                        <el-image v-if="demo.img" :src="demo.img" lazy class="image"> </el-image>
+                        <div v-else class="image image-empty"></div>
                         <div class="title">
                             <span>{{ demo.meta.title }}</span>
                         </div>
@@ -84,6 +85,9 @@ export default {
         width: 100%;
         border-radius: 5px;
         display: block;
+    }
+    .image-empty {
+        aspect-ratio: 3 / 2;
     }
 }
 </style>

@@ -1,4 +1,5 @@
 const files = [
+    {file: "public", name: 'mvt_tiles', title: 'MVT矢量瓦片'},
     {file: "public", name: '3dTiles_shader', title: '建筑纹理与光环(3dTiles)'},
     {file: "public", name: 'dynamic_building', title: '建筑纹理与光环(GeoJSON)'},
     {file: "public", name: 'corrugated_circle', title: '扩散圆'},
@@ -55,16 +56,21 @@ const files = [
     {file: "three", name: 'real_earth', title: '3D地球'}
 ]
 
+// 收集所有预览图，没有 gif 的 DEMO 预览图留空
+const previewImages = require.context('./', true, /\.gif$/)
+
 function createRouter(files) {
     const result = []
     for (let item of files) {
         let file = item['file']
         let name = item['name']
         let title = item['title']
+        let imgPath = './' + file + '/' + name + '.gif'
+        let hasImage = previewImages.keys().includes(imgPath)
         result.push({
             name: name,
             path: '/' + name,
-            img: require('./' + file + '/' + name + '.gif'),
+            img: hasImage ? previewImages(imgPath) : '',
             component: () => import('./' + file + '/' + name + '.vue'),
             meta: {
                 title: title,
