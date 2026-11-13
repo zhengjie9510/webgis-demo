@@ -1,0 +1,25 @@
+/**
+ * @license
+ * Cesium - https://github.com/CesiumGS/cesium
+ * Version 1.147.0
+ *
+ * Copyright 2011-2022 Cesium Contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * Columbus View (Pat. Pend.)
+ *
+ * Portions licensed separately.
+ * See https://github.com/CesiumGS/cesium/blob/main/LICENSE.md for full licensing details.
+ */
+import{a,c}from"./chunk-674HC7OA.js";import{a as i}from"./chunk-MDI2T7LJ.js";import{g as n}from"./chunk-FZYUOFLY.js";async function u(t,a){let s=t.webAssemblyConfig;return!(!n(s)||!n(s.wasmBinary))&&(c({module:s.wasmBinary}),!0)}async function l(t,s){let i=t.webAssemblyConfig;if(n(i))return u(t,s);let{attributes:o,count:r}=t,e=a(o.positions,o.scales,o.rotations,o.colors,r);return{data:e.data,width:e.width,height:e.height}}var w=i(l);export{w as default};

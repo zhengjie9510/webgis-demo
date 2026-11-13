@@ -1,0 +1,25 @@
+/**
+ * @license
+ * Cesium - https://github.com/CesiumGS/cesium
+ * Version 1.147.0
+ *
+ * Copyright 2011-2022 Cesium Contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * Columbus View (Pat. Pend.)
+ *
+ * Portions licensed separately.
+ * See https://github.com/CesiumGS/cesium/blob/main/LICENSE.md for full licensing details.
+ */
+var r,u=typeof TextDecoder<"u"?new TextDecoder("utf-8",{ignoreBOM:!0,fatal:!0}):{decode:()=>{throw Error("TextDecoder not available")}};typeof TextDecoder<"u"&&u.decode();var a=null;function h(){return(null===a||0===a.byteLength)&&(a=new Uint8Array(r.memory.buffer)),a}function b(e,t){return e>>>=0,u.decode(h().subarray(e,e+t))}var o=null;function g(){return(null===o||0===o.byteLength)&&(o=new Uint32Array(r.memory.buffer)),o}function m(e,t){return e>>>=0,g().subarray(e/4,e/4+t)}var y=0;function x(e,t){let n=t(4*e.length,4)>>>0;return g().set(e,n/4),y=e.length,n}function c(e){let t=r.__wbindgen_export_0.get(e);return r.__externref_table_dealloc(e),t}function U(e,t,n,a,i){let o=r.generate_splat_texture(e,t,n,a,i);if(o[2])throw c(o[1]);return f.__wrap(o[0])}function M(e,t,n){let a=r.radix_sort_gaussians_indexes(e,t,n);if(a[2])throw c(a[1]);return c(a[0])}var w=typeof FinalizationRegistry>"u"?{register:()=>{},unregister:()=>{}}:new FinalizationRegistry((e=>r.__wbg_texturedata_free(e>>>0,1))),f=class e{static __wrap(t){t>>>=0;let n=Object.create(e.prototype);return n.__wbg_ptr=t,w.register(n,n.__wbg_ptr,n),n}__destroy_into_raw(){let e=this.__wbg_ptr;return this.__wbg_ptr=0,w.unregister(this),e}free(){let e=this.__destroy_into_raw();r.__wbg_texturedata_free(e,0)}get data(){let e=r.texturedata_data(this.__wbg_ptr);var t=m(e[0],e[1]).slice();return r.__wbindgen_free(e[0],4*e[1],4),t}get width(){return r.texturedata_width(this.__wbg_ptr)>>>0}get height(){return r.texturedata_height(this.__wbg_ptr)>>>0}static new(t,n,a){let i=x(t,r.__wbindgen_malloc),o=y,_=r.texturedata_new(i,o,n,a);return e.__wrap(_)}};async function A(e,t){if("function"==typeof Response&&e instanceof Response){if("function"==typeof WebAssembly.instantiateStreaming)try{return await WebAssembly.instantiateStreaming(e,t)}catch(n){if("application/wasm"==e.headers.get("Content-Type"))throw n;console.warn("`WebAssembly.instantiateStreaming` failed because your server does not serve Wasm with `application/wasm` MIME type. Falling back to `WebAssembly.instantiate` which is slower. Original error:\n",n)}let r=await e.arrayBuffer();return await WebAssembly.instantiate(r,t)}{let n=await WebAssembly.instantiate(e,t);return n instanceof WebAssembly.Instance?{instance:n,module:e}:n}}function d(){let e={wbg:{}};return e.wbg.__wbg_buffer_609cc3eee51ed158=function(e){return e.buffer},e.wbg.__wbg_length_3b4f022188ae8db6=function(e){return e.length},e.wbg.__wbg_length_a446193dc22c12f8=function(e){return e.length},e.wbg.__wbg_new_780abee5c1739fd7=function(e){return new Float32Array(e)},e.wbg.__wbg_new_a12002a7f91c75be=function(e){return new Uint8Array(e)},e.wbg.__wbg_new_e3b321dcfef89fc7=function(e){return new Uint32Array(e)},e.wbg.__wbg_newwithbyteoffsetandlength_f1dead44d1fc7212=function(e,t,n){return new Uint32Array(e,t>>>0,n>>>0)},e.wbg.__wbg_set_10bad9bee0e9c58b=function(e,t,n){e.set(t,n>>>0)},e.wbg.__wbg_set_65595bdd868b3009=function(e,t,n){e.set(t,n>>>0)},e.wbg.__wbindgen_init_externref_table=function(){let e=r.__wbindgen_export_0,t=e.grow(4);e.set(0,void 0),e.set(t+0,void 0),e.set(t+1,null),e.set(t+2,!0),e.set(t+3,!1)},e.wbg.__wbindgen_memory=function(){return r.memory},e.wbg.__wbindgen_string_new=function(e,t){return b(e,t)},e.wbg.__wbindgen_throw=function(e,t){throw new Error(b(e,t))},e}function l(e,t){return r=e.exports,W.__wbindgen_wasm_module=t,o=null,a=null,r.__wbindgen_start(),r}function O(e){if(void 0!==r)return r;typeof e<"u"&&(Object.getPrototypeOf(e)===Object.prototype?({module:e}=e):console.warn("using deprecated parameters for `initSync()`; pass a single object instead"));let t=d();e instanceof WebAssembly.Module||(e=new WebAssembly.Module(e));let n=new WebAssembly.Instance(e,t);return l(n,e)}async function W(e){if(void 0!==r)return r;typeof e<"u"&&(Object.getPrototypeOf(e)===Object.prototype?({module_or_path:e}=e):console.warn("using deprecated parameters for the initialization function; pass a single object instead")),typeof e>"u"&&(e=new URL("wasm_splats_bg.wasm",import.meta.url));let t=d();("string"==typeof e||"function"==typeof Request&&e instanceof Request||"function"==typeof URL&&e instanceof URL)&&(e=fetch(e));let{instance:n,module:a}=await A(await e,t);return l(n,a)}export{U as a,M as b,O as c};
